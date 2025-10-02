@@ -1,0 +1,183 @@
+/* GENERAL */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f7fa;
+  color: #333;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  color: #222;
+}
+
+/* TOP NAV BAR */
+.top-nav {
+  display: flex;
+  justify-content: center;
+  background: #1e3c72; /* gradient start */
+  background: linear-gradient(90deg, #1e3c72, #2a5298); /* gradient */
+  padding: 12px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.top-nav a {
+  color: white;
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 5px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.top-nav a:hover {
+  background: rgba(255,255,255,0.2);
+  transform: scale(1.05);
+}
+
+/* TABLES */
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  width: 85%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: center;
+}
+
+th {
+  background-color: #2a5298;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f0f4f8;
+}
+
+tr:hover {
+  background-color: #dbe7f5;
+  cursor: pointer;
+}
+
+/* RISK COLORS */
+.safe { color: #2e7d32; font-weight: bold; }      /* green */
+.medium { color: #ed6c02; font-weight: bold; }   /* orange */
+.danger { color: #c62828; font-weight: bold; }   /* red */
+
+/* ALERT BOX */
+.alert-box {
+  width: 60%;
+  margin: 50px auto;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  font-size: 1.1em;
+}
+
+.alert-box.danger {
+  background-color: #ffe6e6;
+  border: 2px solid #c62828;
+}
+
+/* BUTTONS */
+button {
+  padding: 12px 25px;
+  margin-top: 15px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background: #1e3c72;
+  color: white;
+  font-size: 1em;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: #2a5298;
+  transform: scale(1.05);
+}
+
+/* SAFE VS UNSAFE EXAMPLES */
+.safe-vs-unsafe {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px auto;
+  flex-wrap: wrap;
+}
+
+.safe-example, .unsafe-example {
+  border-radius: 12px;
+  padding: 20px;
+  width: 40%;
+  min-width: 250px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.safe-example { background-color: #e6ffe6; }
+.unsafe-example { background-color: #ffe6e6; }
+
+/* HOMEPAGE SECTION */
+#home {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+#home ul {
+  list-style: none;
+  padding: 0;
+}
+
+#home li {
+  margin: 15px 0;
+  font-size: 1.1em;
+}
+
+#home a {
+  color: #1e3c72;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+#home a:hover {
+  color: #2a5298;
+  text-decoration: underline;
+}
+
+/* Education / Honeypot Section */
+.education-section {
+  padding: 40px 24px;
+  background: #f9faff;
+  border-radius: 12px;
+  max-width: 1000px;
+  margin: 40px auto;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+.education-section h2 {
+  margin-top: 0;
+  font-size: 1.8rem;
+  color: #1a237e;
+}
+
+.education-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-top: 12px;
+}

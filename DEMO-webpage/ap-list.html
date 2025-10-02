@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wi-Fi Honeypot - AP List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Top Navigation -->
+<nav class="top-nav">
+  <a href="index.html">Home</a>
+  <a href="ap-list.html">AP List</a>
+  <a href="alerts.html">Alerts</a>
+  <a href="logs.html">Logs</a>
+</nav>
+
+  <section id="ap-list">
+    <h1>Nearby Wi-Fi Networks</h1>
+    <table>
+      <tr>
+        <th>Network Name</th>
+        <th>Signal</th>
+        <th>Risk Score</th>
+      </tr>
+      <tr onclick="location.href='alerts.html'">
+        <td>Home WiFi</td>
+        <td>Strong</td>
+        <td class="safe">Low</td>
+      </tr>
+      <tr onclick="location.href='alerts.html'">
+        <td>CoffeeShop</td>
+        <td>Medium</td>
+        <td class="medium">Medium</td>
+      </tr>
+      <tr onclick="location.href='alerts.html'">
+        <td>Rogue_AP</td>
+        <td>Weak</td>
+        <td class="danger">High</td>
+      </tr>
+    </table>
+
+    <!-- Optional Safe vs Unsafe Example -->
+    <h2>Safe vs Unsafe Example</h2>
+    <div class="safe-vs-unsafe">
+      <div class="safe-example">
+        <h3>Safe Network</h3>
+        <p>Name: HomeWiFi</p>
+        <p>Risk Score: Low</p>
+      </div>
+      <div class="unsafe-example">
+        <h3>Unsafe Network</h3>
+        <p>Name: Rogue_AP</p>
+        <p>Risk Score: High</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
